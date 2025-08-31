@@ -1,24 +1,22 @@
-moonph_input = input("Enter the phase of the moon: ")
-def moon_phase(moon):
-  if moon == "New Moon":
-    print ("🌑")
-  elif moon == "Waxing Crescent":
-    print ("🌒")
-  elif moon == "First Quarter":
-    print("🌓")
-  elif moon == "Waxing Gibbous":
-    print("🌔")
-  elif moon == "Full Moon":
-    print("🌕")
-  elif moon == "Waning Gibbous":
-    print("🌖")
-  elif moon == "Last Quarter":
-    print("🌗")
-  elif moon == "Waning Crescent":
-    print("🌘")
+def moon_phase(phase):
+  if phase == "New Moon":
+    return "🌑"
+  elif phase == "Waxing Crescent":
+    return "🌒"
+  elif phase == "First Quarter":
+    return "🌓"
+  elif phase == "Waxing Gibbous":
+    return  "🌔"
+  elif phase == "Full Moon":
+    return  "🌕"
+  elif phase == "Waning Gibbous":
+    return  "🌖"
+  elif phase == "Last Quarter":
+    return  "🌗"
+  elif phase == "Waning Crescent":
+    return  "🌘"
   else:
-    print("Invalid moon phase")
-    moonph_input = input("Enter the phase of the moon: ")
-    moon_phase(moonph_input)
+    return "Invalid moon phase"
     
-moon_phase(moonph_input)
+answer = moon_phase('New Moon')
+print(answer)
